@@ -8,6 +8,9 @@ body {
     background-color: var.$primary-color;
     margin: 0 auto;
 }
+.header {
+    
+}
 .mainSection {
     width: 80%;
     margin: 0 auto;
@@ -35,10 +38,5 @@ body {
     p {
         font-size: 1rem;
         width: 50%;
-        line-height: 1.5rem;
-    }
-    h1, h2, caption, p {
-        color: white;
-        margin: 0 auto;
     }
 }

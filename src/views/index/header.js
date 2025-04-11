@@ -1,23 +1,20 @@
 export default function header() {
-    let divElm = document.createElement("div")
-    divElm.className="header"
+    let navElm = document.createElement("nav")
+    navElm.className="nav"
 
-    divElm.innerHTML = `
-        <div class="header__menu">
-        <div class="header__burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="header__links">
-            <li class="header__link"><img class="nav__img--movieicon" src="./img/movieicon-dark.svg" alt="Movie icon"></li>
-            <li class="header__link"><i class="fa-solid fa-ticket-simple"></i></li>
-            <li class="header__link"><a href="../favorites.html"><i class="fa-solid fa-bookmark"></i>
-            </a></li>
-        </ul>
-    </div>
-
-        
+    navElm.innerHTML = `
+        <div class="nav__menu">
+            <div class="nav__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav__links">
+                <li class="nav__link"><a href="../../pages/projects.html">Projects</a></li>
+                <li class="nav__link"><a href="../../pages/about.html">About</a></li>
+                <li class="nav__link"><a href="../../pages/contact.html">Contack</a></li>
+            </ul>
+        </div>    
     `
-    return divElm
+    return navElm;
 }

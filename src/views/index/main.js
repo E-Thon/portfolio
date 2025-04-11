@@ -21,6 +21,7 @@ export default function main() {
         <p>
             Min tilgang til udvikling er præget af nysgerrighed, struktureret problemløsning og et ønske om kontinuerlig læring. Med en akademisk baggrund i kemi fra Københavns Universitet og en praktisk tilgang til kodning, kombinerer jeg analytisk tænkning med kreativt arbejde.
         </p>
+        <p>
             Jeg søger løbende nye muligheder for at opbygge erfaring gennem praksis, gerne i samarbejde med erfarne udviklere og i et miljø, hvor kvalitet og faglig udvikling prioriteres højt.
         </p>
 
