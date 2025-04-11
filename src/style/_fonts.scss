@@ -7,16 +7,63 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   line-height: 1.5rem;
-}
-h1,
-h2,
-caption,
-p {
   color: white;
-  margin: 0 auto;
-  padding: 0.5rem 0;
 }
-h1,
+h1, a {
+    text-transform: uppercase;
+}
+h1, 
 h2,
-caption {
+h4 {
+    text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  text-align: justify;
+    &:not(:first-of-type) {
+        padding-top: 1em;
+    }
+}
+
+/* SIZE */
+body {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: 1rem;
+}
+a {
+    font-size: .75rem;
+}
+
+/* WEIGHT */ 
+h1,
+h4 {
+    font-weight: bold;
+}
+h2, 
+p,
+a {
+  font-weight: normal;
+}
+
+/* DESIGN */
+h2 {
+    text-decoration: wavy;
+} 
+h4 {
+    font-style: italic;
 }

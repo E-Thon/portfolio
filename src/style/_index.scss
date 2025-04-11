@@ -1,6 +1,7 @@
 @use "./variables/color" as var;
 @use "./placeholders/base";
 @use "./placeholders/img";
+@use "./placeholders/buttons";
 
 body {
     @extend %base;
@@ -9,34 +10,43 @@ body {
     margin: 0 auto;
 }
 .header {
-    
+    position: fixed;
 }
 .mainSection {
     width: 80%;
     margin: 0 auto;
-    
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-
-    }
     a {
-        width: 40%;
+        max-width: 40%;
+        width: 20%;
         display: block;
         margin: 0 auto;
         img {
             width: 100%;
         }
     }
-    h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    caption {
-        font-size: 1.2rem;
+    span {
+        margin: 0 auto;
+        width: fit-content;
     }
     p {
-        font-size: 1rem;
         width: 50%;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 0;
+        article {
+            grid-row: 1 / 2;
+            &:first-of-type {
+                justify-self: end;
+            }
+        }
+        a {
+            @extend %button;
+            grid-area: 2 / 1 / 3 / 3;
+        }
     }
 }

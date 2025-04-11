@@ -1,7 +1,10 @@
 @use "index";
 @use "fonts";
+@use "header";
+@use "footer";
 
 
 #app {
     margin: 0 auto;
+    position: relative;
 }

@@ -1,8 +1,16 @@
+// import burger from '../burger.js';
+import logo from "/logo.png";
+
 export default function header() {
     let navElm = document.createElement("nav")
     navElm.className="nav"
 
     navElm.innerHTML = `
+        <div class="nav__logo">
+            <a href="https://e-thon.dk" target="_blank">
+                        <img src="${logo}" class="logo" alt="E-Thon logo" />
+                    </a>
+        </div>
         <div class="nav__menu">
             <div class="nav__burger">
                 <span></span>
@@ -18,3 +26,4 @@ export default function header() {
     `
     return navElm;
 }
+// burger();
