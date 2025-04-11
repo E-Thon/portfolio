@@ -1,4 +1,6 @@
 import '../style/style.scss'
+import main from 'main.js'
+main();
 
 document.querySelector('#app').innerHTML = `
     <header></header>
