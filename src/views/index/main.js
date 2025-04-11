@@ -2,7 +2,7 @@ import logo from '/logo.png'
 
 export default function main() {
     let sectionElm = document.createElement("section")
-    sectionElm.className="sectionMain"
+    sectionElm.className="mainSection"
 
     sectionElm.innerHTML = `
         <h1>
@@ -29,8 +29,12 @@ export default function main() {
                 <h3>MyMovies</h3>
                 <iframe href="thon-mymovies.netlify.app">
             </article>
+            <article class="card">
+                <h3>Pokedex</h3>
+                <iframe href="thon-pokedex.netlify.app">
+            </article>
 
-            <a href=""></a>
+            <a href="../../pages/work.html">See more</a>
         </div>
         
     `

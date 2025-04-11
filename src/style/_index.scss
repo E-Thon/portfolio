@@ -1,2 +1,44 @@
-@use "./variables/color";
+@use "./variables/color" as var;
+@use "./placeholders/base";
+@use "./placeholders/img";
 
+body {
+    @extend %base;
+    @extend %img;
+    background-color: var.$primary-color;
+    margin: 0 auto;
+}
+.mainSection {
+    width: 80%;
+    margin: 0 auto;
+    
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+
+    }
+    a {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    caption {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+        width: 50%;
+        line-height: 1.5rem;
+    }
+    h1, h2, caption, p {
+        color: white;
+        margin: 0 auto;
+    }
+}

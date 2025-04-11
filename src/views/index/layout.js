@@ -1,5 +1,6 @@
 import '../../style/style.scss'
 import main from './main.js'
+import header from './header.js'
 
 document.querySelector('#app').innerHTML = `
     <header></header>
@@ -7,4 +8,5 @@ document.querySelector('#app').innerHTML = `
     <footer></footer>
     `
 
+document.querySelector("header").append(header())
 document.querySelector("main").append(main())
