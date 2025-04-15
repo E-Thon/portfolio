@@ -1,4 +1,4 @@
-// import burger from '../burger.js';
+import burger from '../burger.js';
 import logo from "/logo.png";
 
 export default function header() {
@@ -16,14 +16,18 @@ export default function header() {
                 <span></span>
                 <span></span>
                 <span></span>
+                <span></span>
             </div>
             <ul class="nav__links">
                 <li class="nav__link"><a href="../../pages/projects.html">Projects</a></li>
                 <li class="nav__link"><a href="../../pages/about.html">About</a></li>
-                <li class="nav__link"><a href="../../pages/contact.html">Contack</a></li>
+                <li class="nav__link"><a href="../../pages/contact.html">Contact</a></li>
             </ul>
         </div>    
     `
     return navElm;
 }
-// burger();
+document.addEventListener("DOMContentLoaded", () => {
+    burger();
+  });
+  

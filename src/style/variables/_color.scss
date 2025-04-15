@@ -1,9 +1,11 @@
 $primary-color: black;
-$font-color: white;
+$font-color: rgb(238, 196, 118);
 
-h1,
+h1{
+  color: white;
+}
 h2,
 caption,
 p {
-  color: white;
+  color: $font-color;
 }

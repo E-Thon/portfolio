@@ -1,64 +1,85 @@
+@use "./variables/color" as var;
+
+header {
+  position: relative;
+}
 .nav {
+  background-color: rgba(246, 232, 178, .05);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 93%;
+  height: 2rem;
+  padding: 1rem 3rem;
   &__logo img {
     width: 2rem;
+    opacity: 0.3;
   }
-  /*
   &__menu {
-    max-width: 1.5rem;
-    width: 100%;
     cursor: pointer;
-    position: relative;
+    width: fit-content;
   }
   &__burger {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    column-gap: 20rem;
     height: 1.25rem;
     width: 1.25rem;
     padding: 0.25rem;
     position: absolute;
+    top: 1rem;
+    right: 3rem;
     z-index: 100;
-    &span {
-      height: 12.5%;
+    & span {
+      background-color: var.$font-color;
+      height: 10%;
       display: block;
-      border-radius: 075px;
-      &:first-of-type {
-        width: 50%;
-        align-self: end;
-      }
-      &:nth-of-type(2) {
+      &:first-of-type, &:last-of-type {
         width: 100%;
-        align-self: center;
+        align-self: start;
       }
-      &:last-of-type {
+      &:nth-of-type(2), &:nth-of-type(3) {
         width: 50%;
+        align-self: center;
+        opacity: .5;
       }
     }
   }
   &__links {
     position: absolute;
-    top: -1.25rem;
-    left: -3.5rem;
-    display: none;
-    align-items: center;
-    justify-content: start;
+    top: 3rem;
+    right: 3.5rem;
     z-index: 5;
-    width: fit-content;
-    height: 100vh;
+    list-style: none;
+    display: none;
     flex-direction: column;
-    gap: 4rem;
-    padding: 8rem 1.7rem 8rem 3.5rem;
-    border-radius: 5px;
+    align-items: center;
+    //desktop:
+    max-width: 10rem;
+    width: 100%;
+    gap: .5rem;
+    
+  }
+  &__link {
+    width: 100%;
+    display: flex;
     & a {
       text-decoration: none;
       font-size: 1rem;
+      color: rgb(238, 196, 118);
+      border: 1px solid white;
+      padding: .5rem;
+      border-radius: 10px;
+      box-shadow:  0 4px 4px 0 rgba(255, 255, 255, 0.25) inset;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
-    */
 }
-

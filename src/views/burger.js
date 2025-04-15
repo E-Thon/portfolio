@@ -1,29 +1,26 @@
 export default function burger() {
   const menu = document.querySelector(".nav__links");
   const burger = document.querySelector(".nav__burger");
-  const upperBar = document.querySelector(".nav__burger span:first-of-type");
-  const middleBar = document.querySelector(
-    ".nav__burger span:nth-of-type(2)"
+  const middleBars = document.querySelectorAll(
+    ".nav__burger span:nth-of-type(2), .nav__burger span:nth-of-type(3)"
   );
-  const lowerBar = document.querySelector(".nav__burger span:last-of-type");
+
   burger.addEventListener("click", toggleMenu);
+
   function toggleMenu() {
     if (menu.style.display === "none" || menu.style.display === "") {
       menu.style.display = "flex";
       burger.style.justifyContent = "center";
-      burger.style.rotate = "-17deg";
-      burger.style.padding = "0";
-      upperBar.style.rotate = "153.2deg";
-      middleBar.style.rotate = "62deg";
-      lowerBar.style.rotate = "153.2deg";
+      
+      middleBars.forEach((bar) => {
+        bar.style.display = "none";
+      })
     } else {
       menu.style.display = "none";
       burger.style.justifyContent = "space-between";
-      burger.style.rotate = "0deg";
-      burger.style.padding = "0.25rem";
-      upperBar.style.rotate = "0deg";
-      middleBar.style.rotate = "0deg";
-      lowerBar.style.rotate = "0deg";
+      middleBars.forEach((bar) => {
+        bar.style.display = "block";
+      })      
     }
   }
 }
