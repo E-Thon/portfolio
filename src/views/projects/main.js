@@ -1,13 +1,12 @@
-import logo from '/logo.png'
 
 export default function main() {
     let sectionElm = document.createElement("section")
     sectionElm.className="sectionMain"
 
     sectionElm.innerHTML = `
-        <a href="https://e-thon.dk" target="_blank">
-            <img src="${logo}" class="logo" alt="E-Thon logo" />
-        </a>
+        <h1>
+            Projects
+        </h1>
         
     `
 

@@ -1,22 +1,26 @@
 @use "./variables/color" as var;
+@use "./placeholders/base";
+@use "./placeholders/img";
 
 header {
   position: relative;
 }
 .nav {
-  background-color: rgba(246, 232, 178, .05);
+  @extend %base;
+  @extend %img;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(246, 232, 178, .05);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 100%;
-  width: 93%;
-  height: 2rem;
-  padding: 1rem 3rem;
+  max-width: inherit;
+  width: 100%;
+  height: fit-content;
+  padding: 1% 3rem;
   &__logo img {
     width: 2rem;
     opacity: 0.3;
@@ -24,18 +28,22 @@ header {
   &__menu {
     cursor: pointer;
     width: fit-content;
+    position: absolute;
+    height: 100vh;
+    top: 30%;
+    right: 3rem;
   }
   &__burger {
+    position: absolute;
+    top: 0;
+    right: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 2rem;
+    width: 2rem;
     padding: 0.25rem;
-    position: absolute;
-    top: 1rem;
-    right: 3rem;
-    z-index: 100;
+    z-index: 10;
     & span {
       background-color: var.$font-color;
       height: 10%;
@@ -52,18 +60,20 @@ header {
     }
   }
   &__links {
-    position: absolute;
-    top: 3rem;
-    right: 3.5rem;
-    z-index: 5;
+    z-index: 20;
     list-style: none;
     display: none;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    background-color: rgba(246, 232, 178, .05);
+    padding: 70% 3rem;
+    margin-top: -15%;
+  
     //desktop:
     max-width: 10rem;
     width: 100%;
-    gap: .5rem;
+    gap: 2rem;
     
   }
   &__link {
@@ -72,11 +82,9 @@ header {
     & a {
       text-decoration: none;
       font-size: 1rem;
-      color: rgb(238, 196, 118);
-      border: 1px solid white;
+      color: var.$font-color;
       padding: .5rem;
       border-radius: 10px;
-      box-shadow:  0 4px 4px 0 rgba(255, 255, 255, 0.25) inset;
       width: 100%;
       display: flex;
       justify-content: center;

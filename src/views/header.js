@@ -1,4 +1,4 @@
-import burger from '../burger.js';
+import burger from './burger.js';
 import logo from "/logo.png";
 
 export default function header() {

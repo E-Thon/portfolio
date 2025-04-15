@@ -1,7 +1,7 @@
 import '../../style/style.scss'
 import main from './main.js'
-import header from './header.js'
-import footer from './footer.js'
+import header from '../header.js'
+import footer from '../footer.js'
 
 
 document.querySelector('#app').innerHTML = `
