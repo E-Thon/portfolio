@@ -1,27 +1,21 @@
-import portrait from "/portrait.jpg";
+import img from "/portrait.jpg";
 
 export default function footer() {
-    let navElm = document.createElement("nav")
-    navElm.className="nav"
+    let divElm = document.createElement("div")
+    divElm.className="div"
 
-    navElm.innerHTML = `
-        <figure class="footer__portait">
-          <img src="${portait}" class="portrait" alt="Portrait of Emilie Malene Thon" />  
+    divElm.innerHTML = `
+        <figure class="div__portrait">
+          <img src="${img}" class="portrait" alt="Portrait of Emilie Malene Thon" />  
         </figure>
-        <div class="nav__menu">
-            <div class="nav__burger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav__links">
-                <li class="nav__link"><a href="../../pages/projects.html">Projects</a></li>
-                <li class="nav__link"><a href="../../pages/about.html">About</a></li>
-                <li class="nav__link"><a href="../../pages/contact.html">Contact</a></li>
-            </ul>
-        </div>    
+        <ul class="div__somes">
+            <li class="div__some"><a href="#">Facebook</a></li>
+            <li class="div__some"><a href="#">Instagram</a></li>
+            <li class="div__some"><a href="#">LinkedIn</a></li>
+            <li class="div__some"><a href="#">Github</a></li>
+        </ul>
+       
     `
-    return navElm;
+    return divElm;
 }
   

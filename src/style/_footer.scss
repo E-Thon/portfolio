@@ -1,6 +1,24 @@
 footer {
-    height: 13rem;
+    height: fit-content;
     width: 100%;
+    padding: 1% 3%;
     border: 1px solid white;
     background-color: rgba(246, 232, 178, .05);
+    & .div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &__portrait img {
+            width: 30%;
+            border-radius: 50%;
+            border: 1px solid white;
+            padding: .4rem;
+        }
+        &__somes {
+            display: flex;
+        }
+        &__some  {
+            color: white;
+        }
+    } 
 }
