@@ -19,7 +19,7 @@ export default function header() {
                 <span></span>
             </div>
             <ul class="nav__links">
-                <li class="nav__link"><a href="../../pages/projects.html">Projects</a></li>
+                <li class="nav__link"><a href="src/pages/projects.html">Projects</a></li>
                 <li class="nav__link"><a href="../../pages/about.html">About</a></li>
                 <li class="nav__link"><a href="../../pages/contact.html">Contact</a></li>
             </ul>
