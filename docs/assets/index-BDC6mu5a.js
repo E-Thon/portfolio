@@ -1,15 +1,9 @@
-import logo from "/logo.png";
-
-export default function main() {
-  let sectionElm = document.createElement("section");
-  sectionElm.className = "mainSection";
-
-  sectionElm.innerHTML = `
+import{l as a,h as n,f as o}from"./footer-CKDDBiM1.js";function i(){let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
         <h1>
             Portfolio
         </h1>
         <a href="../../pages/projects.html" target="_blank" class="logoLink">
-            <img src="${logo}" class="logo" alt="E-Thon logo" />
+            <img src="${a}" class="logo" alt="E-Thon logo" />
         </a>
         <h2>Emilie Thon</h2>
         <h4>Frontend-Focused Web Developer in Training</h4>
@@ -35,10 +29,11 @@ export default function main() {
                 <iframe href="thon-pokedex.netlify.app"></iframe></a>
             </article>
 
-            <a href="../projects.html" class="btn">See more</a>
+            <a href="../../pages/projects.html" class="btn">See more</a>
         </div>
         
-    `;
-
-  return sectionElm;
-}
+    `,e}document.querySelector("#app").innerHTML=`
+    <header></header>
+    <main></main>
+    <footer></footer>
+    `;document.querySelector("header").append(n());document.querySelector("main").append(i());document.querySelector("footer").append(o());

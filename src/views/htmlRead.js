@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default function getHtmlEntries() {
-    const pagesDir = path.resolve(__dirname, "../pages");
+    const pagesDir = path.resolve(__dirname, "../src/pages");
     const entries = {};
 
     // Read all files in the directory

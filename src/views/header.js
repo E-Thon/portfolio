@@ -7,7 +7,7 @@ export default function header() {
 
     navElm.innerHTML = `
         <div class="nav__logo">
-            <a href="https://e-thon.dk" target="_blank">
+            <a href="./index.html" target="_blank">
                         <img src="${logo}" class="logo" alt="E-Thon logo" />
                     </a>
         </div>
@@ -19,9 +19,9 @@ export default function header() {
                 <span></span>
             </div>
             <ul class="nav__links">
-                <li class="nav__link"><a href="src/pages/projects.html">Projects</a></li>
-                <li class="nav__link"><a href="../../pages/about.html">About</a></li>
-                <li class="nav__link"><a href="../../pages/contact.html">Contact</a></li>
+                <li class="nav__link"><a href="./projects.html">Projects</a></li>
+                <li class="nav__link"><a href="./about.html">About</a></li>
+                <li class="nav__link"><a href="./contact.html">Contact</a></li>
             </ul>
         </div>    
     `

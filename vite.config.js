@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
-import getHtmlEntries from "./src/js/htmlRead.js";
+import getHtmlEntries from "./src/views/htmlRead";
 
 export default defineConfig({
     base: './',
