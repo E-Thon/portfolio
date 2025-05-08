@@ -1,9 +1,12 @@
-import{l as n,h as o,f as t}from"./footer-nKAi0SeU.js";function r(){const a="./";let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
+import{l as t,h as n,f as a}from"./footer-CC3EfLBS.js";const r=""+new URL("../logo-top.png",import.meta.url).href,l=""+new URL("../logo-middle.png",import.meta.url).href,i=""+new URL("../logo-bottom.png",import.meta.url).href;function c(){const o="./";let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
         <h1>
             Portfolio
         </h1>
         <a href="./projects.html" target="_blank" class="logoLink">
-            <img src="${n}" class="logo" alt="E-Thon logo" />
+            <img src="${t}" class="full-logo" alt="E-Thon full logo" />
+            <img src="${r}" class="logo-part logo-top" alt="E-Thon logo top part" />
+            <img src="${l}" class="logo-part logo-middle" alt="E-Thon logo middle part" />
+            <img src="${i}" class="logo-part logo-bottom" alt="E-Thon logo bottom part" />
         </a>
         <h2>Emilie Thon</h2>
         <h4>Frontend-Focused Web Developer in Training</h4>
@@ -34,11 +37,11 @@ import{l as n,h as o,f as t}from"./footer-nKAi0SeU.js";function r(){const a="./"
                 </a>
             </article>
 
-            <a href="${a}projects.html" class="btn">See more</a>
+            <a href="${o}projects.html" class="btn">See more</a>
         </div>
         
-    `,e}document.querySelector("#app").innerHTML=`
+    `,e}function s(){document.querySelector(".logo-top"),document.querySelector(".logo-middle"),document.querySelector(".logo-bottom"),document.querySelector(".logo-full")}document.querySelector("#app").innerHTML=`
     <header></header>
     <main></main>
     <footer></footer>
-    `;document.querySelector("header").append(o());document.querySelector("main").append(r());document.querySelector("footer").append(t());
+    `;document.querySelector("header").append(n());document.querySelector("main").append(c());document.querySelector("footer").append(a());setTimeout(()=>{s()},100);

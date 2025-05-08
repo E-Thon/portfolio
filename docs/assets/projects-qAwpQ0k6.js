@@ -1,4 +1,4 @@
-import{h as t,f as a}from"./footer-nKAi0SeU.js";function o(){const l="./",e="../public/";let i=document.createElement("section");return i.className="sectionMain",i.innerHTML=`
+import{h as t,f as a}from"./footer-CC3EfLBS.js";function o(){const l="./",e="../public/";let i=document.createElement("section");return i.className="sectionMain",i.innerHTML=`
         <h1>
             projects
         </h1>

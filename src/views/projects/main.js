@@ -57,7 +57,6 @@ export default function main() {
                     </ul>
                 </ul>
             </article>
-            <a href="${baseUrl}projects.html" class="btn">See more</a>
         </div>
        
     `
