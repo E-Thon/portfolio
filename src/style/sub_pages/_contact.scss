@@ -1,14 +1,77 @@
+@use "../variables/color" as var;
+
 .contact {
     width: fit-content;
     margin: 0 auto;
-    p {
-        text-align: center;
-        padding: 30vh 0 10%;
+
+    section {
+        max-width: 60vw;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        p {
+            text-align: center;
+            color: var.$font-color;
+            a {
+                color: white;
+                text-transform: lowercase;
+                font-size: 1rem;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
     }
-    span {
-        text-align: center;
-        font-style: italic;
-        padding-bottom: 30vh;
-        display: inline-block;
+    form {
+        display: grid;
+        row-gap: 1rem;
+        max-width: 50vw;
+        width: 100%;
+        padding: 2rem 0 4rem;
+        margin: 0 auto;
+        label {
+            grid-column: 1 / 2;
+            :first-of-type {
+                grid-row: 1 / 2;
+            }
+            :nth-of-type(2) {
+                grid-row: 2 / 3;
+            }
+            :last-of-type {
+                grid-row: 3 / 4;
+            }
+        }
+        input:not(:last-of-type) {
+            grid-column: 2 / 4;
+
+            :first-of-type {
+                grid-row: 1 / 2;
+            }
+            :nth-of-type(2) {
+                grid-row: 2 / 3;
+            }
+        }
+        input:last-of-type {
+            grid-column: 1 / 4;
+            grid-row: 4 / 5;
+            justify-self: end;
+        }
+        textarea {
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+
+        }
+        p {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+
+        }
     }
+    .hp-field {
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
 }
