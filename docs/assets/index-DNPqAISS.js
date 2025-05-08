@@ -1,8 +1,8 @@
-import{l as a,h as n,f as o}from"./footer-CKDDBiM1.js";function i(){let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
+import{l as a,h as n,f as o}from"./footer-DxtyAgeK.js";function i(){let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
         <h1>
             Portfolio
         </h1>
-        <a href="../../pages/projects.html" target="_blank" class="logoLink">
+        <a href="./projects.html" target="_blank" class="logoLink">
             <img src="${a}" class="logo" alt="E-Thon logo" />
         </a>
         <h2>Emilie Thon</h2>
@@ -29,7 +29,7 @@ import{l as a,h as n,f as o}from"./footer-CKDDBiM1.js";function i(){let e=docume
                 <iframe href="thon-pokedex.netlify.app"></iframe></a>
             </article>
 
-            <a href="../../pages/projects.html" class="btn">See more</a>
+            <a href="./projects.html" class="btn">See more</a>
         </div>
         
     `,e}document.querySelector("#app").innerHTML=`

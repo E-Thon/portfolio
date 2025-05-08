@@ -8,7 +8,7 @@ export default function main() {
         <h1>
             Portfolio
         </h1>
-        <a href="../../pages/projects.html" target="_blank" class="logoLink">
+        <a href="./projects.html" target="_blank" class="logoLink">
             <img src="${logo}" class="logo" alt="E-Thon logo" />
         </a>
         <h2>Emilie Thon</h2>
@@ -27,15 +27,17 @@ export default function main() {
             <article class="card">
                 <h3>MyMovies</h3>
                 <a href="https://thon-mymovies.netlify.app/">
-                <iframe href="thon-mymovies.netlify.app"></iframe></a>
+                    <img src="https://placecats.com/g/300/200" alt="Image of the news article">
+                </a>
             </article>
             <article class="card">
                 <h3>Pokedex</h3>
                 <a href="https://thon-pokedex.netlify.app/">
-                <iframe href="thon-pokedex.netlify.app"></iframe></a>
+                    <img src="https://placecats.com/g/300/200" alt="Image of the news article">
+                </a>
             </article>
 
-            <a href="../projects.html" class="btn">See more</a>
+            <a href="./projects.html" class="btn">See more</a>
         </div>
         
     `;

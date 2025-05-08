@@ -2,9 +2,20 @@
 @use "fonts";
 @use "header";
 @use "footer";
+@use "./sub_pages/about";
+@use "./sub_pages/contact";
+@use "./sub_pages/projects";
+@use "./placeholders/base";
+@use "./placeholders/img";
 
 
 #app {
     margin: 0 auto;
     position: relative;
+    @extend %base;
+    @extend %img;
+
+}
+main {
+    height: 75vh;
 }

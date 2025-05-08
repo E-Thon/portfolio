@@ -4,8 +4,13 @@ export default function main() {
 
     sectionElm.innerHTML = `
         <h1>
-            Contact
+            contact
         </h1>
+        <div class="contact">
+            <p>Contact N/A</p>
+            <span >... under construction</span>
+        </div>
+
         
     `
 
