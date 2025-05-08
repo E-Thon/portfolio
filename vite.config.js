@@ -17,9 +17,6 @@ export default defineConfig({
         input: {
           ...getHtmlEntries(),
           index: resolve(__dirname, 'index.html'),
-          // projects: resolve(__dirname, 'src/pages/projects.html'),
-          // about: resolve(__dirname, 'src/pages/about.html'),
-          // contact: resolve(__dirname, 'src/pages/contact.html')
         }
       }
     },

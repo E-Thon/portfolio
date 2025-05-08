@@ -1,21 +1,24 @@
-@use "index";
+@use "./placeholders/base";
+@use "./placeholders/img";
 @use "fonts";
 @use "header";
 @use "footer";
+@use "index";
 @use "./sub_pages/about";
 @use "./sub_pages/contact";
 @use "./sub_pages/projects";
-@use "./placeholders/base";
-@use "./placeholders/img";
+@use "./variables/color" as var;
 
 
 #app {
-    margin: 0 auto;
     position: relative;
     @extend %base;
     @extend %img;
 
 }
-main {
-    height: 75vh;
+body {
+    @extend %base;
+    @extend %img;
+    background-color: var.$primary-color;
+    margin: 0 auto;
 }

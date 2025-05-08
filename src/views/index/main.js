@@ -1,10 +1,11 @@
 import logo from "/logo.png";
 
 export default function main() {
-  let sectionElm = document.createElement("section");
-  sectionElm.className = "mainSection";
+    const baseUrl = import.meta.env.DEV ? '/src/pages/' : './';
+    let sectionElm = document.createElement("section");
+    sectionElm.className = "mainSection";
 
-  sectionElm.innerHTML = `
+    sectionElm.innerHTML = `
         <h1>
             Portfolio
         </h1>
@@ -26,21 +27,27 @@ export default function main() {
         <div>
             <article class="card">
                 <h3>MyMovies</h3>
-                <a href="https://thon-mymovies.netlify.app/">
-                    <img src="https://placecats.com/g/300/200" alt="Image of the news article">
+                <a href="https://thon-mymovies.netlify.app/" target="_blank">
+                    <img src="public/mymovies-screenshot543x543.png" alt="Screenshot of myMovies webpage">
                 </a>
             </article>
             <article class="card">
                 <h3>Pokedex</h3>
-                <a href="https://thon-pokedex.netlify.app/">
-                    <img src="https://placecats.com/g/300/200" alt="Image of the news article">
+                <a href="https://thon-pokedex.netlify.app/" target="_blank">
+                    <img src="public/pokedex-screenshot600x600.png" alt="Screenshot of Pokedex webpage">
+                </a>
+            </article>
+            <article class="card">
+                <h3>Newsify</h3>
+                <a href="https://thon-newsify.netlify.app/" target="_blank">
+                    <img src="public/newsify-screenshot538x538.png" alt="Screenshot of Newslify webpage">
                 </a>
             </article>
 
-            <a href="./projects.html" class="btn">See more</a>
+            <a href="${baseUrl}projects.html" class="btn">See more</a>
         </div>
         
     `;
 
-  return sectionElm;
+    return sectionElm;
 }

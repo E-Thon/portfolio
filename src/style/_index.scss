@@ -3,12 +3,7 @@
 @use "./placeholders/img";
 @use "./placeholders/buttons";
 
-body {
-    @extend %base;
-    @extend %img;
-    background-color: var.$primary-color;
-    margin: 0 auto;
-}
+
 .header {
     position: fixed;
 }
@@ -41,15 +36,23 @@ body {
         justify-content: space-between;
         gap: 2rem;
         padding: 6rem 0;
-        max-width: 50rem;
+        max-width: 90vw;
         width: 100%;
         margin: 0 auto;
+        .card {
+            margin: 0 auto;
+            img {
+                max-width: 20rem;
+                width: 100%;
+            }
+        }
         
-        & a.btn {
+        a.btn {
             @extend %button;
             grid-column: 1 / -1;
             justify-self: center;
             margin-top: 3rem;
+
         }
     }
 }
