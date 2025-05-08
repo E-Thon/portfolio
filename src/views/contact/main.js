@@ -26,14 +26,14 @@ export default function main() {
             <form id="formula" class="formula" action="#" method="post">
                 <label for="name" title="Type your name for the contact formula">Name</label>
                 <input type="text" name="name" id="name" value="">
-                <label for="mail" title="Type your e-mail adress for the contact formula">Email</label>
+                <label for="mail" title="Type your e-mail adress for the contact formula">E-mail</label>
                 <input type="text" name="mail" id="mail" value="">
                 <label for="text" title="Type your message for the contact formula">Message</label>
                 <textarea name="text" id="text" cols="50" rows="4">
                 </textarea>
                 <!-- Honeypot felt - usynligt for mennesker, men synligt for bots -->
                 <div class="hp-field" aria-hidden="true">
-                    <label for="website">Website (Udfyld ikke dette felt)</label>
+                    <label for="website">Website (Don't fill out)</label>
                     <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
                 </div>
                 <div id="recaptcha" class="g-recaptcha"></div>
@@ -42,6 +42,6 @@ export default function main() {
             </form>      
     `
     email();
-
+    
     return sectionElm;
 }

@@ -1,9 +1,9 @@
-import{l as a,h as n,f as o}from"./footer-DxtyAgeK.js";function i(){let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
+import{l as n,h as o,f as t}from"./footer-nKAi0SeU.js";function r(){const a="./";let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
         <h1>
             Portfolio
         </h1>
         <a href="./projects.html" target="_blank" class="logoLink">
-            <img src="${a}" class="logo" alt="E-Thon logo" />
+            <img src="${n}" class="logo" alt="E-Thon logo" />
         </a>
         <h2>Emilie Thon</h2>
         <h4>Frontend-Focused Web Developer in Training</h4>
@@ -19,21 +19,26 @@ import{l as a,h as n,f as o}from"./footer-DxtyAgeK.js";function i(){let e=docume
 
         <div>
             <article class="card">
-                <h3>MyMovies</h3>
-                <a href="https://thon-mymovies.netlify.app/">
-                <iframe href="thon-mymovies.netlify.app"></iframe></a>
+                <a href="https://thon-mymovies.netlify.app/" target="_blank">
+                    <img src="public/mymovies-screenshot564x399.png" alt="Screenshot of myMovies webpage">
+                </a>
             </article>
             <article class="card">
-                <h3>Pokedex</h3>
-                <a href="https://thon-pokedex.netlify.app/">
-                <iframe href="thon-pokedex.netlify.app"></iframe></a>
+                <a href="https://thon-pokedex.netlify.app/" target="_blank">
+                    <img src="public/pokedex-screenshot536x378.png" alt="Screenshot of Pokedex webpage">
+                </a>
+            </article>
+            <article class="card">
+                <a href="https://thon-newsify.netlify.app/" target="_blank">
+                    <img src="public/newsify-screenshot454x333.png" alt="Screenshot of Newslify webpage">
+                </a>
             </article>
 
-            <a href="./projects.html" class="btn">See more</a>
+            <a href="${a}projects.html" class="btn">See more</a>
         </div>
         
     `,e}document.querySelector("#app").innerHTML=`
     <header></header>
     <main></main>
     <footer></footer>
-    `;document.querySelector("header").append(n());document.querySelector("main").append(i());document.querySelector("footer").append(o());
+    `;document.querySelector("header").append(o());document.querySelector("main").append(r());document.querySelector("footer").append(t());

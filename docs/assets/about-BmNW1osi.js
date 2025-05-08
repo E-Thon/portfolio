@@ -1,7 +1,12 @@
-import{h as n,f as o}from"./footer-DxtyAgeK.js";function t(){let e=document.createElement("section");return e.className="sectionMain",e.innerHTML=`
+import{h as n,f as o}from"./footer-nKAi0SeU.js";function t(){let e=document.createElement("section");return e.className="sectionMain",e.innerHTML=`
         <h1>
-            Contact
+            About
         </h1>
+        <div class="about">
+            <p>About N/A</p>
+            <span >... under construction</span>
+        </div>
+
         
     `,e}document.querySelector("#app").innerHTML=`
     <header></header>
