@@ -15,9 +15,36 @@
         width: 20%;
         display: block;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
         img {
             width: 100%;
+            @extend %img;
         }
+        .full-logo {
+            grid-row: 1 / -1;
+            width: 100%;
+        }
+        .logo-top {
+            display: none;
+            
+            grid-row: 1 / 2;
+            align-self: start;
+        }
+        .logo-middle {
+            display: none;
+
+            grid-row: 2 / 3;
+            align-self: center;
+        }
+        .logo-bottom {
+            display: none;
+
+            grid-row: 3 / 4;
+            align-self: end;
+        }
+        
     }
     span {
         margin: 0 auto;

@@ -1,4 +1,7 @@
 import logo from "/logo.png";
+import logoTop from "/logo-top.png";
+import logoMiddle from "/logo-middle.png";
+import logoBottom from "/logo-bottom.png";
 
 export default function main() {
     const baseUrl = import.meta.env.DEV ? '/src/pages/' : './';
@@ -10,7 +13,10 @@ export default function main() {
             Portfolio
         </h1>
         <a href="./projects.html" target="_blank" class="logoLink">
-            <img src="${logo}" class="logo" alt="E-Thon logo" />
+            <img src="${logo}" class="full-logo" alt="E-Thon full logo" />
+            <img src="${logoTop}" class="logo-part logo-top" alt="E-Thon logo top part" />
+            <img src="${logoMiddle}" class="logo-part logo-middle" alt="E-Thon logo middle part" />
+            <img src="${logoBottom}" class="logo-part logo-bottom" alt="E-Thon logo bottom part" />
         </a>
         <h2>Emilie Thon</h2>
         <h4>Frontend-Focused Web Developer in Training</h4>

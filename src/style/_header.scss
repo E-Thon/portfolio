@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(246, 232, 178, .05);
+  background-color: var.$secundary-bg-color;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ header {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: rgba(246, 232, 178, .05);
+    background-color: var.$secundary-bg-color;
     padding: 70% 3rem;
     margin-top: -15%;
   

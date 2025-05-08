@@ -1,5 +1,3 @@
-import email from "./emailJS"
-
 export default function main() {
     let sectionElm = document.createElement("section")
     sectionElm.className="contact"
@@ -19,7 +17,7 @@ export default function main() {
                         class="section__content__text__link">+45 60 61 52 18</a>. If I am unavailable, please leave a message and I will get back to you as soon as possible.
                 </p>
                 <p>
-                    Please, send an e-mail to <a href="mailto:emilie.m.thon@gmail.com?subject=Mail%20from%20portfolio&body=Direct%20contact%20"
+                    If you are more of a texter, please, send an e-mail to <a href="mailto:emilie.m.thon@gmail.com?subject=Mail%20from%20portfolio&body=Direct%20contact%20"
                         target="_blank">emilie.m.thon@gmail.com</a>, or fill out the formula below.
                 </p>
             </section>
@@ -40,8 +38,6 @@ export default function main() {
                 <input type="submit" value="Send!" id="submitBtn">
                 <p id="errorMessage"></p>
             </form>      
-    `
-    email();
-    
+    ` 
     return sectionElm;
 }

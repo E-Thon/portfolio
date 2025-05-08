@@ -26,84 +26,101 @@ export default function email() {
     // Initialiser EmailJS når scriptet er indlæst
     emailJsScript.onload = () => {
         emailjs.init("Y4XhddjIFhPfQnfXA");
+        
+        // Tilføj EmailJS-funktionalitet når scriptet er indlæst
+        setupEmailJSSubmit();
     };
     
-    // Import validering og tilføj EmailJS-funktionalitet
-    import('./validator.js').then(module => {
-        const validation = module.default;
-        validation();
-        
-        // Tilføj EmailJS-funktionalitet
+    function setupEmailJSSubmit() {
         const form = document.querySelector(".formula");
         const errorMessage = document.getElementById('errorMessage');
         const submitButton = document.getElementById('submitBtn');
         const honeypotField = document.getElementById('website');
         
-        // Overskriv standard formular-håndtering for at tilføje EmailJS
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
+        if (!form) {
+            console.error("Form element not found");
+            return;
+        }
+        
+        console.log("EmailJS setup initialized");
+        
+        // Problem: validator.js stopper event propagation med preventDefault() og returnerer false
+        // Løsning: Tilføj en direkte click handler på submitButton i stedet for form submit event
+
+        submitButton.addEventListener('click', function(clickEvent) {
+            // Lad os ikke forhindre standard form submit handling endnu,
+            // så validator.js får lov til at køre først
             
-            // Tjek om honeypot-feltet er udfyldt (bot-check)
-            if (honeypotField && honeypotField.value !== '') {
-                console.log("Bot detected through honeypot field");
-                // Silent failure - vi fortæller ikke botten, at vi har fanget den
-                errorMessage.textContent = "Message sent successfully!"; // Falsk positiv besked
-                return false;
-            }
+            console.log("Submit button clicked");
             
-            // Tjek rate limiting
-            const rateLimitStatus = rateLimiter.isRateLimited();
-            if (rateLimitStatus.limited) {
-                errorMessage.textContent = `Please wait ${rateLimitStatus.remainingTime} seconds before sending another message.`;
-                errorMessage.style.color = "red";
-                return false;
-            }
-            
-            // Kør validering fra validation.js
-            let isValid = true;
-            try {
-                // Simulér validering ved at udløse en submit event, som validation.js lytter efter
-                const validationEvent = new Event('submit', { cancelable: true });
-                const wasPrevented = !form.dispatchEvent(validationEvent);
+            // Vent kort tid for at give validator.js mulighed for at køre
+            setTimeout(function() {
+                // Nu tjekker vi om validator.js har fundet fejl
+                const currentErrorText = errorMessage.textContent;
                 
-                // Hvis event'en blev forhindret af validation.js, så er formen ikke valid
-                if (wasPrevented) {
-                    isValid = false;
+                // Debug information
+                console.log("Current error state:", currentErrorText);
+                
+                // Tjek honeypot
+                if (honeypotField && honeypotField.value !== '') {
+                    console.log("Bot detected through honeypot field");
+                    errorMessage.textContent = "Message sent successfully!"; // Falsk positiv besked
+                    return;
                 }
-            } catch (err) {
-                console.error('Error running validation:', err);
-                isValid = false;
-            }
-            
-            if (isValid) {
-                // Vis loading state
+                
+                // Hvis der er en fejlbesked fra validator (ikke tom og ikke success eller sending)
+                if (currentErrorText && 
+                    currentErrorText !== "Sending..." && 
+                    !currentErrorText.includes("successfully") &&
+                    !currentErrorText.includes("wait")) {
+                    console.log("Validation error detected, stopping EmailJS send");
+                    return; // Stop her - der er en valideringsfejl
+                }
+                
+                // Hvis vi når hertil, er validering OK
+                console.log("Validation passed, proceeding with EmailJS");
+                
+                // Tjek rate limiting
+                const rateLimitStatus = rateLimiter.isRateLimited();
+                if (rateLimitStatus.limited) {
+                    errorMessage.textContent = `Please wait ${rateLimitStatus.remainingTime} seconds before sending another message.`;
+                    errorMessage.style.color = "red";
+                    return;
+                }
+                
+                // Alle check er passeret - send email
                 submitButton.disabled = true;
                 errorMessage.textContent = "Sending...";
                 errorMessage.style.color = "black";
                 
-                // Forbered data til EmailJS format
                 const templateParams = {
                     from_name: document.getElementById('name').value,
                     reply_to: document.getElementById('mail').value,
-                    message: document.getElementById('text').value
+                    message: document.getElementById('text').value.trim()
                 };
                 
-                // Send email via EmailJS
+                console.log("Sending email with params:", templateParams);
+                
                 emailjs.send('service_r94fdda', 'template_2c8nsm4', templateParams)
-                    .then(() => {
+                    .then((response) => {
+                        console.log("EmailJS success response:", response);
                         errorMessage.textContent = "Message sent successfully!";
                         errorMessage.style.color = "green";
                         form.reset();
                         submitButton.disabled = false;
                     }, (error) => {
+                        console.error('EmailJS error:', error);
                         errorMessage.textContent = "Failed to send message. Please try again.";
                         errorMessage.style.color = "red";
-                        console.error('EmailJS error:', error);
                         submitButton.disabled = false;
                     });
-            }
+            }, 100); // Kort ventetid for at give validator.js mulighed for at køre først
         });
-    }).catch(err => {
-        console.error('Error loading validation module:', err);
-    });
-}
+        
+        // Forhindrer standard form submit efter validering for at undgå side-reload
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            return false;
+        });
+    }
+    }
