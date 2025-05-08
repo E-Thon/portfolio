@@ -26,21 +26,18 @@ export default function main() {
 
         <div>
             <article class="card">
-                <h3>MyMovies</h3>
                 <a href="https://thon-mymovies.netlify.app/" target="_blank">
-                    <img src="public/mymovies-screenshot543x543.png" alt="Screenshot of myMovies webpage">
+                    <img src="public/mymovies-screenshot564x399.png" alt="Screenshot of myMovies webpage">
                 </a>
             </article>
             <article class="card">
-                <h3>Pokedex</h3>
                 <a href="https://thon-pokedex.netlify.app/" target="_blank">
-                    <img src="public/pokedex-screenshot600x600.png" alt="Screenshot of Pokedex webpage">
+                    <img src="public/pokedex-screenshot536x378.png" alt="Screenshot of Pokedex webpage">
                 </a>
             </article>
             <article class="card">
-                <h3>Newsify</h3>
                 <a href="https://thon-newsify.netlify.app/" target="_blank">
-                    <img src="public/newsify-screenshot538x538.png" alt="Screenshot of Newslify webpage">
+                    <img src="public/newsify-screenshot454x333.png" alt="Screenshot of Newslify webpage">
                 </a>
             </article>
 

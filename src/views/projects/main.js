@@ -28,7 +28,7 @@ export default function main() {
             <article>
                 <h3>Pokedex</h3>
                 <a href="https://thon-pokedex.netlify.app/" target="_blank">
-                    <img src="${imgPath}pokedex-screenshot600x600.png" alt="Screenshot of Pokedex webpage">
+                    <img src="${imgPath}pokedex-screenshot588x588.png" alt="Screenshot of Pokedex webpage">
                 </a>
                 <ul>
                     <li>Technologies used</li>
@@ -50,14 +50,14 @@ export default function main() {
                         <li>HTML</li>
                         <li>SCSS</li>
                         <li>JavaScript</li>
+                        <li>Vite</li>
+                        <li>Vitest</li>
+                        <li>Node</li>
+                        <li>webpack</li>
                     </ul>
                 </ul>
             </article>
             <a href="${baseUrl}projects.html" class="btn">See more</a>
-        </div>
-        <div class="projects">
-            <p>Projects</p>
-            <span >... under construction</span>
         </div>
        
     `
