@@ -1,4 +1,4 @@
-import{h as t,f as a}from"./footer-CC3EfLBS.js";function o(){const l="./",e="../public/";let i=document.createElement("section");return i.className="sectionMain",i.innerHTML=`
+import{h as l,f as t}from"./footer-DGp0wuYt.js";function a(){const e="../public/";let i=document.createElement("section");return i.className="sectionMain",i.innerHTML=`
         <h1>
             projects
         </h1>
@@ -50,11 +50,10 @@ import{h as t,f as a}from"./footer-CC3EfLBS.js";function o(){const l="./",e="../
                     </ul>
                 </ul>
             </article>
-            <a href="${l}projects.html" class="btn">See more</a>
         </div>
        
     `,i}document.querySelector("#app").innerHTML=`
     <header></header>
     <main></main>
     <footer></footer>
-    `;document.querySelector("header").append(t());document.querySelector("main").append(o());document.querySelector("footer").append(a());
+    `;document.querySelector("header").append(l());document.querySelector("main").append(a());document.querySelector("footer").append(t());
