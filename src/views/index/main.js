@@ -12,11 +12,15 @@ export default function main() {
         <h1>
             Portfolio
         </h1>
+        <div class="intro"> 
+            <div class="logo">
+                <img src="${logoTop}" class="logo__part top" alt="E-Thon logo top part" />
+                <img src="${logoMiddle}" class="logo__part middle" alt="E-Thon logo middle part" />
+                <img src="${logoBottom}" class="logo__part bottom" alt="E-Thon logo bottom part" />
+            </div>
+        </div>
         <a href="./projects.html" target="_blank" class="logoLink">
-            <img src="${logo}" class="full-logo" alt="E-Thon full logo" />
-            <img src="${logoTop}" class="logo-part logo-top" alt="E-Thon logo top part" />
-            <img src="${logoMiddle}" class="logo-part logo-middle" alt="E-Thon logo middle part" />
-            <img src="${logoBottom}" class="logo-part logo-bottom" alt="E-Thon logo bottom part" />
+            <img src="${logo}" alt="E-Thon full logo" />
         </a>
         <h2>Emilie Thon</h2>
         <h4>Frontend-Focused Web Developer in Training</h4>
@@ -30,20 +34,20 @@ export default function main() {
             I am continuously seeking new opportunities to gain practical experience, preferably in collaboration with experienced developers and in an environment where quality and professional development are highly valued.
         </p>
 
-        <div>
-            <article class="card">
+        <div class="projects">
+            <article class="projects__card">
                 <a href="https://thon-mymovies.netlify.app/" target="_blank">
-                    <img src="public/mymovies-screenshot564x399.png" alt="Screenshot of myMovies webpage">
+                    <img src="mymovies-screenshot564x399.png" alt="Screenshot of myMovies webpage">
                 </a>
             </article>
-            <article class="card">
+            <article class="projects__card">
                 <a href="https://thon-pokedex.netlify.app/" target="_blank">
-                    <img src="public/pokedex-screenshot536x378.png" alt="Screenshot of Pokedex webpage">
+                    <img src="pokedex-screenshot536x378.png" alt="Screenshot of Pokedex webpage">
                 </a>
             </article>
-            <article class="card">
+            <article class="projects__card">
                 <a href="https://thon-newsify.netlify.app/" target="_blank">
-                    <img src="public/newsify-screenshot454x333.png" alt="Screenshot of Newslify webpage">
+                    <img src="newsify-screenshot454x333.png" alt="Screenshot of Newslify webpage">
                 </a>
             </article>
 

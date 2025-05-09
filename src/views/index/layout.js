@@ -15,6 +15,4 @@ document.querySelector("header").append(header())
 document.querySelector("main").append(main())
 document.querySelector("footer").append(footer())
 
-setTimeout(() => {
-    initLogoAnimation();
-}, 100);
+initLogoAnimation();
