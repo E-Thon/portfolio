@@ -10,11 +10,14 @@ footer {
     background-color: var.$primary-color;
     & .div{
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: auto;
         align-items: center;
+        justify-content: space-between;
         &__portrait img {
             max-width: 10rem;
+            min-width: 8rem;
             width: 100%;
             border-radius: 50%;
             border: 1px solid white;
@@ -41,6 +44,7 @@ footer {
             display: flex;
             gap: 2rem;
             padding-right: 5%;
+            justify-self: center;
         }
         &__some  {
             color: white;
