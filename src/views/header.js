@@ -9,7 +9,7 @@ export default function header(erdetforsiden) {
     navElm.className="nav"
     navElm.innerHTML = `
         <div class="nav__logo">
-            <a href="${import.meta.env.DEV ? '/' : '/'}">
+            <a href="${import.meta.env.DEV ? '/' : '/portfolio'}">
                 <img src="${logo}" class="logo" alt="E-Thon logo" />
             </a>
         </div>
