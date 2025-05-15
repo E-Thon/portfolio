@@ -2,9 +2,8 @@ import burger from './burger.js';
 import logo from "/logo.png";
 
 export default function header() {
-    // base URL for links that works in both dev and production
     const baseUrl = import.meta.env.DEV ? '/src/pages/' : './';
-    
+   
     let navElm = document.createElement("nav")
     navElm.className="nav"
     navElm.innerHTML = `
@@ -29,7 +28,6 @@ export default function header() {
     `
     return navElm;
 }
-
 document.addEventListener("DOMContentLoaded", () => {
     burger();
 });
