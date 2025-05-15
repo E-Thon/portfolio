@@ -1,0 +1,25 @@
+@use "./placeholders/base";
+@use "./placeholders/img";
+@use "fonts";
+@use "header";
+@use "footer";
+@use "index";
+@use "splash";
+@use "./sub_pages/about";
+@use "./sub_pages/contact";
+@use "./sub_pages/projects";
+@use "./variables/color" as var;
+
+
+#app {
+    position: relative;
+    @extend %base;
+    @extend %img;
+
+}
+body {
+    @extend %base;
+    @extend %img;
+    background-color: var.$primary-color;
+    margin: 0 auto;
+}

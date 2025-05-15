@@ -1,0 +1,102 @@
+@use "../variables/color" as var;
+@use "../placeholders/buttons";
+
+.contact {
+    width: fit-content;
+    margin: 0 auto;
+
+    section {
+        max-width: 60vw;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        p {
+            text-align: center;
+            color: var.$font-color;
+            a {
+                color: white;
+                text-transform: lowercase;
+                font-size: 1rem;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+    form {
+        display: grid;
+        row-gap: 1rem;
+        max-width: 50vw;
+        width: 100%;
+        padding: 3rem 3rem 8rem;
+        margin: 1rem auto 4rem;
+        background-color: var.$formula-bg-color;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 80%;
+        border-bottom-right-radius: 20%;
+        label {
+            grid-column: 1 / 2;
+            padding-right: 2rem;
+            color: var.$primary-color;
+            :not(:last-of-type){
+                align-self: center;
+            }
+            :first-of-type {
+                grid-row: 1 / 2;
+            }
+            :nth-of-type(2) {
+                grid-row: 2 / 3;
+            }
+            :last-of-type {
+                grid-row: 3 / 4;
+            }
+        }
+        input:not(:last-of-type) {
+            grid-column: 2 / 4;
+            border: none;
+            background-color: var.$primary-color;
+            border-radius: 2px;
+            color: var.$formula-bg-color;
+            padding: .5rem 1rem;
+            font-size: .8rem;
+            :first-of-type {
+                grid-row: 1 / 2;
+            }
+            :nth-of-type(2) {
+                grid-row: 2 / 3;
+            }
+        }
+        input:last-of-type {
+            grid-column: 1 / 4;
+            grid-row: 4 / 5;
+            justify-self: end;
+            @extend %button;
+            padding: .5rem 2rem;
+        }
+        textarea {
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+            border: none;
+            background-color: var.$primary-color;
+            border-radius: 2px;
+            color: var.$formula-bg-color;
+            font-family: inherit;
+            font-size: .8rem;
+            padding: .5rem 1rem;
+        }
+        #errorMessage {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            color: red;
+            font-size: .8rem;
+        }
+    }
+    .hp-field {
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+}

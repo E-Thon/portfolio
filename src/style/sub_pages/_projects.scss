@@ -1,0 +1,42 @@
+@use "../placeholders/buttons";
+@use "../variables/color" as var;
+
+.projects {
+    width: fit-content;
+    margin: 0 auto;
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 6rem 0;
+        max-width: 90vw;
+        width: 100%;
+        margin: 0 auto;
+        
+        article {
+            margin: 0 auto;
+            img {
+                max-width: 20rem;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 4px 17px 3px rgba(255, 255, 255, 0.2);
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            >ul {
+                list-style: none;
+                margin-block-start: 0;
+                padding-inline-start: 0;
+                margin-top: 1rem;
+                
+                li {
+                    color: var.$font-color;
+                }
+            }
+        }
+    }
+}
