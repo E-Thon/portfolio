@@ -19,7 +19,7 @@ export default function main() {
                 <img src="${logoBottom}" class="logo__part bottom" alt="E-Thon logo bottom part" />
             </div>
         </div>
-        <a href="./projects.html" target="_blank" class="logoLink">
+        <a href="${baseUrl}projects.html" class="logoLink">
             <img src="${logo}" alt="E-Thon full logo" />
         </a>
         <h2>Emilie Thon</h2>
