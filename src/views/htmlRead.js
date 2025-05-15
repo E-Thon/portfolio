@@ -20,6 +20,8 @@ export default function getHtmlEntries() {
         const name = path.basename(file, ".html");
         entries[name] = path.resolve(pagesDir, file);
     });
+    console.log(entries);
+    
     
     return entries;
 }
