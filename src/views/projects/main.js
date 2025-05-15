@@ -22,6 +22,7 @@ export default function main() {
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
+                        <li>REST API</li>
                     </ul>
                 </ul>
             </article>
@@ -36,6 +37,7 @@ export default function main() {
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
+                        <li>REST API</li>
                     </ul>
                 </ul>
             </article>
@@ -50,6 +52,7 @@ export default function main() {
                         <li>HTML</li>
                         <li>SCSS</li>
                         <li>JavaScript</li>
+                        <li>REST API</li>
                         <li>Vite</li>
                         <li>Vitest</li>
                         <li>Node</li>
