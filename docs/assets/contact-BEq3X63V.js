@@ -1,4 +1,4 @@
-import{h as d,f}from"./footer-wxPfvB1K.js";function p(){let n=document.createElement("section");return n.className="contact",n.innerHTML=`
+import{h as d,f}from"./footer-SM1yP1WF.js";function p(){let n=document.createElement("section");return n.className="contact",n.innerHTML=`
         <h1>
             contact
         </h1>
@@ -45,4 +45,4 @@ return t.target.text.value.trim()==""?(t.preventDefault(),o="Please write your m
     <header></header>
     <main></main>
     <footer></footer>
-    `;document.querySelector("header").append(d());document.querySelector("main").append(p());document.querySelector("footer").append(f());g();h();y();
+    `;document.querySelector("header").append(d(!1));document.querySelector("main").append(p());document.querySelector("footer").append(f());g();h();y();

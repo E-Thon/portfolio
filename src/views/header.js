@@ -9,7 +9,7 @@ export default function header(erdetforsiden) {
     navElm.className="nav"
     navElm.innerHTML = `
         <div class="nav__logo">
-            <a href="${import.meta.env.DEV ? '/' : '/index.html'}">
+            <a href="${import.meta.env.DEV ? '/' : '/'}">
                 <img src="${logo}" class="logo" alt="E-Thon logo" />
             </a>
         </div>
@@ -37,7 +37,7 @@ export default function header(erdetforsiden) {
     navElm.className="nav"
     navElm.innerHTML = `
         <div class="nav__logo">
-            <a href="${import.meta.env.DEV ? '/' : '../../index.html'}">
+            <a href="${import.meta.env.DEV ? '/' : '../../'}">
                 <img src="${logo}" class="logo" alt="E-Thon logo" />
             </a>
         </div>

@@ -1,4 +1,4 @@
-import{l as r,h as s,f as l}from"./footer-wxPfvB1K.js";const c=""+new URL("../logo-top.png",import.meta.url).href,d=""+new URL("../logo-middle.png",import.meta.url).href,m=""+new URL("../logo-bottom.png",import.meta.url).href;function p(){const o="/portfolio/src/pages/";let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
+import{l as r,h as s,f as l}from"./footer-SM1yP1WF.js";const c=""+new URL("../logo-top.png",import.meta.url).href,d=""+new URL("../logo-middle.png",import.meta.url).href,m=""+new URL("../logo-bottom.png",import.meta.url).href;function p(){const o="/portfolio/src/pages/";let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
         <h1>
             Portfolio
         </h1>
