@@ -12,11 +12,11 @@ export default defineConfig({
     },
     build: {
       outDir: 'docs',
+      emptyOutDir: true,
       target: 'esnext',
       rollupOptions: {
         input: {
-          // ...getHtmlEntries(),
-          about: resolve(__dirname, 'src/pages/about.html'),
+          ...getHtmlEntries(),
           index: resolve(__dirname, 'index.html'),
         }
       }

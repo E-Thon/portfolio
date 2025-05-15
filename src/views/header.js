@@ -3,6 +3,7 @@ import logo from "/logo.png";
 
 export default function header() {
     const baseUrl = import.meta.env.DEV ? '/src/pages/' : '/portfolio/src/pages/';
+    // const baseUrl = import.meta.env.DEV ? '/src/pages/' : './';
    
     let navElm = document.createElement("nav")
     navElm.className="nav"
