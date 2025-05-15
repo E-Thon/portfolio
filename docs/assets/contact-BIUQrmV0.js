@@ -1,4 +1,4 @@
-import{h as d,f}from"./footer-L-l0yhPk.js";function p(){let n=document.createElement("section");return n.className="contact",n.innerHTML=`
+import{h as d,f}from"./footer-wxPfvB1K.js";function p(){let n=document.createElement("section");return n.className="contact",n.innerHTML=`
         <h1>
             contact
         </h1>

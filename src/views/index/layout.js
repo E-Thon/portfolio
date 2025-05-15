@@ -11,7 +11,7 @@ document.querySelector('#app').innerHTML = `
     <footer></footer>
     `
 
-document.querySelector("header").append(header())
+document.querySelector("header").append(header(true))
 document.querySelector("main").append(main())
 document.querySelector("footer").append(footer())
 
