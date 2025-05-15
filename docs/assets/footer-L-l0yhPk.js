@@ -1,6 +1,6 @@
 (function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const r of a.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&i(r)}).observe(document,{childList:!0,subtree:!0});function n(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function i(e){if(e.ep)return;e.ep=!0;const a=n(e);fetch(e.href,a)}})();function o(){const t=document.querySelector(".nav__links"),s=document.querySelector(".nav__burger"),n=document.querySelectorAll(".nav__burger span:nth-of-type(2), .nav__burger span:nth-of-type(3)");s.addEventListener("click",i);function i(){t.style.display==="none"||t.style.display===""?(t.style.display="flex",s.style.justifyContent="center",n.forEach(e=>{e.style.display="none"})):(t.style.display="none",s.style.justifyContent="space-between",n.forEach(e=>{e.style.display="block"}))}}const l=""+new URL("../logo.png",import.meta.url).href;function d(){const t="/portfolio/src/pages/";let s=document.createElement("nav");return s.className="nav",s.innerHTML=`
         <div class="nav__logo">
-            <a href="./index.html">
+            <a href="/index.html">
                 <img src="${l}" class="logo" alt="E-Thon logo" />
             </a>
         </div>

@@ -3,13 +3,12 @@ import logo from "/logo.png";
 
 export default function header() {
     const baseUrl = import.meta.env.DEV ? '/src/pages/' : '/portfolio/src/pages/';
-    // const baseUrl = import.meta.env.DEV ? '/src/pages/' : './';
    
     let navElm = document.createElement("nav")
     navElm.className="nav"
     navElm.innerHTML = `
         <div class="nav__logo">
-            <a href="${import.meta.env.DEV ? '/' : './index.html'}">
+            <a href="${import.meta.env.DEV ? '/' : '/index.html'}">
                 <img src="${logo}" class="logo" alt="E-Thon logo" />
             </a>
         </div>
