@@ -4,7 +4,7 @@ import logoMiddle from "/logo-middle.png";
 import logoBottom from "/logo-bottom.png";
 
 export default function main() {
-    const baseUrl = import.meta.env.DEV ? '/src/pages/' : './';
+    const baseUrl = import.meta.env.DEV ? '/src/pages/' : '/src/pages/';
     let sectionElm = document.createElement("section");
     sectionElm.className = "mainSection";
 

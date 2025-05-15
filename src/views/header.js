@@ -2,7 +2,7 @@ import burger from './burger.js';
 import logo from "/logo.png";
 
 export default function header() {
-    const baseUrl = import.meta.env.DEV ? '/src/pages/' : './';
+    const baseUrl = import.meta.env.DEV ? '/src/pages/' : '/src/pages/';
    
     let navElm = document.createElement("nav")
     navElm.className="nav"

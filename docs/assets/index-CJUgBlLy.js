@@ -1,4 +1,4 @@
-import{l as r,h as s,f as l}from"./footer-BYPz_38Y.js";const c=""+new URL("../logo-top.png",import.meta.url).href,d=""+new URL("../logo-middle.png",import.meta.url).href,m=""+new URL("../logo-bottom.png",import.meta.url).href;function p(){const o="./";let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
+import{l as r,h as s,f as l}from"./footer-CUU9-WQG.js";const c=""+new URL("../logo-top.png",import.meta.url).href,d=""+new URL("../logo-middle.png",import.meta.url).href,m=""+new URL("../logo-bottom.png",import.meta.url).href;function p(){const o="/src/pages/";let e=document.createElement("section");return e.className="mainSection",e.innerHTML=`
         <h1>
             Portfolio
         </h1>
@@ -9,7 +9,7 @@ import{l as r,h as s,f as l}from"./footer-BYPz_38Y.js";const c=""+new URL("../lo
                 <img src="${m}" class="logo__part bottom" alt="E-Thon logo bottom part" />
             </div>
         </div>
-        <a href="./projects.html" target="_blank" class="logoLink">
+        <a href="${o}projects.html" class="logoLink">
             <img src="${r}" alt="E-Thon full logo" />
         </a>
         <h2>Emilie Thon</h2>
