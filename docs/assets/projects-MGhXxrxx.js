@@ -1,4 +1,4 @@
-import{h as l,f as t}from"./footer-DGp0wuYt.js";function a(){const e="../public/";let i=document.createElement("section");return i.className="sectionMain",i.innerHTML=`
+import{h as l,f as t}from"./footer-BYPz_38Y.js";function a(){const e="../public/";let i=document.createElement("section");return i.className="sectionMain",i.innerHTML=`
         <h1>
             projects
         </h1>
@@ -15,6 +15,7 @@ import{h as l,f as t}from"./footer-DGp0wuYt.js";function a(){const e="../public/
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
+                        <li>REST API</li>
                     </ul>
                 </ul>
             </article>
@@ -29,6 +30,7 @@ import{h as l,f as t}from"./footer-DGp0wuYt.js";function a(){const e="../public/
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
+                        <li>REST API</li>
                     </ul>
                 </ul>
             </article>
@@ -43,6 +45,7 @@ import{h as l,f as t}from"./footer-DGp0wuYt.js";function a(){const e="../public/
                         <li>HTML</li>
                         <li>SCSS</li>
                         <li>JavaScript</li>
+                        <li>REST API</li>
                         <li>Vite</li>
                         <li>Vitest</li>
                         <li>Node</li>
